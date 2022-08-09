@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>my first page about javascript</title>
+    </head>
+    <body>
+        <input type="text" id ="textfield">
+        <var></var>
+        <Button type="button" id = "btn1" onclick="myfunction()" > </Button>
+        <br><br><br>
+        <button type="button" onclick="mypopupfunction()" id  = "btn2">click me agian</button>
+        <script>
+            const element = document.getElementById("btn1");
+            element.addEventListener('click',myfunction);
+            function myfunction(){
+                const textvalue = document.getElementById("textfield").value;
+                element.innerText = textvalue;
+            }
+            const element2 = document.getElementById("btn2");
+            element2.addEventListener('click',mypopupfunction);
+            function mypopupfunction(){
+                const textvalue2 = document.getElementById("textfield").value;
+                alert(textvalue2);
+            }
+            
+        </script>
+    </body>
+    </html>
